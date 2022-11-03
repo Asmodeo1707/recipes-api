@@ -50,7 +50,6 @@ const postInstruction = (req, res) => {
     }
 }
 
-
 const patchInstruction = (req, res) => {
     const { description, step, recipeId } = req.body
     const id = req.params.instruction_id
@@ -82,7 +81,6 @@ const deleteInstruction = (req, res) => {
             res.status(400).json({message: err.message})
         })
 }
-
 
 module.exports = {
     postInstruction,

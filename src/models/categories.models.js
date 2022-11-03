@@ -15,9 +15,7 @@ const Categories = db.define('categories', {
         unique: true
     }
 }, {
-    //? Evita que sequelize cree la columna de createdAt y updatedAt
     timestamps: false
 })
-
 
 module.exports = Categories

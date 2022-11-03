@@ -44,7 +44,6 @@ const deleteInstruction = async (id) => {
     return data
 }
 
-
 module.exports = {
     createInstruction,
     getAllInstructions,

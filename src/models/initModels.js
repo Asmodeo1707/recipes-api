@@ -9,9 +9,6 @@ const UsersIngredients = require('./users_ingredients.models')
 const UsersRecipes = require('./users_recipes.models')
 
 const initModels = () => {
-    //? hasMany || hasOne llave foranea dentro de parentesis
-    //? belongsTo || belongsToMany llave foranea en primer paramentro
-
     //* Users 1:M Recipes
     Users.hasMany(Recipes)
     Recipes.belongsTo(Users)
@@ -53,6 +50,5 @@ const initModels = () => {
     Recipes.hasMany(Instructions)
     Instructions.belongsTo(Recipes)
 }
-
 
 module.exports = initModels

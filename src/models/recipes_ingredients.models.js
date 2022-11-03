@@ -4,7 +4,6 @@ const db = require('../utils/database')
 const Recipes = require('./recipes.models')
 const Ingredients = require('./ingredients.models')
 
-
 const RecipesIngredients = db.define('recipes_ingredients', {
     id: {
         type: DataTypes.UUID,
@@ -36,4 +35,3 @@ const RecipesIngredients = db.define('recipes_ingredients', {
 })
 
 module.exports = RecipesIngredients
-

@@ -1,4 +1,3 @@
-//? Dependencies
 const uuid = require('uuid')
 
 const Users = require('../models/users.models')
@@ -22,7 +21,6 @@ const getUserById = async (id) => {
     })
     return data
 }
-
 
 const createUser = async (data) => {
     const newUser = await Users.create({
@@ -56,9 +54,6 @@ const deleteUser = async (id) => {
     })
     return data
 }
-
-//? Un servidor contiene la API
-//? Otro servidor contiene la Base de Datos
 
 const getUserByEmail = async(email) => {
     //? SELECT * FROM users where email = 'sahid.kick@academlo.com'//

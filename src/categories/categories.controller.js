@@ -1,10 +1,5 @@
 const Categories = require('../models/categories.models')
 
-//? Ver todas las categorias
-//? Ver una categoria en especifico
-//? Crear categoria
-//? Eliminar categoria
-
 const getAllCategories = async () => {
     const data = await Categories.findAll()
     return data

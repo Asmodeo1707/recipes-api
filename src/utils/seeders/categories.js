@@ -1,4 +1,3 @@
-
 const Categories = require('../../models/categories.models')
 
 Categories.bulkCreate([

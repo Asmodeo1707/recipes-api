@@ -1,7 +1,5 @@
 const Types = require('../models/types.models')
 
-
-
 const getAllTypes = async () => {
     const data = await Types.findAll()
     return data

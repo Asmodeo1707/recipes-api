@@ -2,7 +2,6 @@ const uuid = require('uuid')
 
 const Instructions = require('../../models/instructions.models')
 
-
 Instructions.bulkCreate([
     {
         id:uuid.v4(),

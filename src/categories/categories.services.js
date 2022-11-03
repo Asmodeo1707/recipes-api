@@ -68,5 +68,3 @@ module.exports = {
     postCategory,
     deleteCategory
 }
-
-

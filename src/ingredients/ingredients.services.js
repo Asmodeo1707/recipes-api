@@ -50,7 +50,6 @@ const postIngredient = (req, res) => {
     }
 }
 
-
 const patchIngredient = (req, res) => {
     const { name, typeId, urlImg } = req.body
     const id = req.params.ingredient_id
@@ -83,7 +82,6 @@ const deleteIngredient = (req, res) => {
         })
 }
 
-
 module.exports = {
     getAllIngredients,
     getIngredientById,
@@ -91,5 +89,3 @@ module.exports = {
     patchIngredient,
     deleteIngredient
 }
-
-

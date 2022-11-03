@@ -35,4 +35,3 @@ const UsersIngredients = db.define('users_ingredients', {
 })
 
 module.exports = UsersIngredients
-

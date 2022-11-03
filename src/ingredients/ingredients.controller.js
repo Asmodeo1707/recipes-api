@@ -44,7 +44,6 @@ const deleteIngredient = async (id) => {
     return data
 }
 
-
 module.exports = {
     getAllIngredients,
     getIngredientById,

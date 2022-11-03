@@ -1,6 +1,5 @@
 const Ingredients = require('../../models/ingredients.models')
 
-
 Ingredients.bulkCreate([
     {
         id: 'cdea51a0-b247-408d-97c5-c0a4564c6bf8',

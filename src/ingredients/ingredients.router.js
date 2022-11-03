@@ -5,11 +5,6 @@ const adminMiddleware = require('../middlewares/role.middleware')
 const ingredientServices = require('./ingredients.services')
 require('../middlewares/auth.middleware')(passport)
 
-
-
-//? /ingredients 
-//? /ingredients/:ingredient_id
-
 router.route('/')
     .get(ingredientServices.getAllIngredients)
     .post(

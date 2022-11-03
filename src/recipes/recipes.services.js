@@ -9,8 +9,7 @@ const getAllRecipes = (req, res) => {
             res.status(400).json({message: err.message})
         })
 }
-//? /api/v1/recipe/2/ingredients/8
-//? router.get('/api/v1/recipe/:recipe_id/ingredients/:ingredient_id')
+
 const getRecipeById = (req, res) => {
     const id = req.params.recipe_id 
     recipeControllers.getRecipeById(id)

@@ -2,7 +2,6 @@ const uuid = require('uuid')
 
 const RecipesIngredients = require('../../models/recipes_ingredients.models')
 
-
 RecipesIngredients.bulkCreate([
     {
         id: uuid.v4(),

@@ -28,6 +28,4 @@ const Instructions = db.define('instructions', {
     }
 })
 
-
 module.exports = Instructions
-

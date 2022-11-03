@@ -5,8 +5,6 @@ const categoryServices = require("./categories.services");
 const adminMiddleware = require("../middlewares/role.middleware");
 
 require("../middlewares/auth.middleware")(passport);
-//? /
-//? /:id
 
 router.route("/")
   .get(categoryServices.getAllCategories)

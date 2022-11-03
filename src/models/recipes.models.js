@@ -13,7 +13,6 @@ const Recipes = db.define('recipes', {
     title: {
         type: DataTypes.STRING,
         allowNull: false,
-        //? Min validate 
         validate: {
             min: 5
         }
@@ -37,9 +36,6 @@ const Recipes = db.define('recipes', {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    //? las FK de sequelize tienen ciertas reglas:
-    //? Debe contener la tabla a la que hace referencia en singular
-    //? Debe terminar con el subfijo Id
     userId : {
         type: DataTypes.UUID,
         allowNull: false,
@@ -67,6 +63,5 @@ const Recipes = db.define('recipes', {
         defaultValue: 0
     }
 })
-
 
 module.exports = Recipes

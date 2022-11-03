@@ -4,7 +4,6 @@ const passport = require('passport')
 const instructionServices = require('./instructions.services')
 require('../middlewares/auth.middleware')(passport)
 
-
 router.route('/')
     .get(instructionServices.getAllInstructions)
     .post(

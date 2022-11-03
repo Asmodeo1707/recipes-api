@@ -36,7 +36,6 @@ const registerUser = (req, res) => {
   } = req.body;
 
   if (firstName && lastName && email && password && phone && birthday) {
-    //? Ejecutamos el controller
     usersControllers
       .createUser({
         firstName,
@@ -55,7 +54,6 @@ const registerUser = (req, res) => {
         res.status(400).json(err.message);
       });
   } else {
-    //? Error cuando no mandan todos los datos necesarios para crear un usuario
     res.status(400).json({
       message: "All fields must be completed",
       fields: {
@@ -106,10 +104,8 @@ const deleteUser = (req, res) => {
     });
 };
 
-//? My user services
-
 const getMyUser = (req, res) => {
-  const id = req.user.id; //? req.user contiene la informacion del token desencriptado
+  const id = req.user.id; 
 
   usersControllers
     .getUserById(id)
@@ -120,8 +116,6 @@ const getMyUser = (req, res) => {
       res.status(400).json({ message: err.message });
     });
 };
-
-// TODO crear rutas protegidas /me, con los verbos para update y delete
 
 const patchMyUser = (req, res) => {
   const id = req.user.id;
@@ -136,10 +130,6 @@ const patchMyUser = (req, res) => {
       res.status(400).json({ message: err.message });
     });
 };
-
-//? 2 tipos de delete:
-//* 1. por administrador
-//* 2. por mi mismo
 
 const deleteMyUser = (req, res) => {
   const id = req.user.id;
