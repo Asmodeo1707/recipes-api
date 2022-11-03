@@ -4,7 +4,7 @@ const {comparePassword} = require('../utils/crypto')
 const loginUser = async (email, password) => {
     try {
         const user = await getUserByEmail(email)
-        //? user.password contiene la contraseña encriptada de mi base de datos
+        
         const verifyPassword = comparePassword(password, user.password)
         if(verifyPassword){
             return user
