@@ -56,7 +56,6 @@ const deleteUser = async (id) => {
 }
 
 const getUserByEmail = async(email) => {
-    //? SELECT * FROM users where email = 'sahid.kick@academlo.com'//
     const data = await Users.findOne({
         where: {
             email: email,
